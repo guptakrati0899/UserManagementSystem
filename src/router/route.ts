@@ -1,14 +1,14 @@
-import { Adduser } from '@/components/Adduser/Adduser';
-import { Viewuser } from '@/components/Viewuser/Viewuser';
+import  Adduser  from '../components/Adduser/Adduser.vue'
+import  Viewuser  from '../components/Viewuser/Viewuser.vue';
 const routes = [
   {
     path: '/adduser',
-    name: 'adduser',
+    name: 'addUser',
     component: Adduser
   },
   {
     path: '/viewuser',
-    name: 'viewuser',
+    name: 'viewUser',
     component: Viewuser
   },
   ]

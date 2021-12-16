@@ -7,6 +7,7 @@
     <div>
       <!-- <Home/> -->
       <!-- <Adduser/> -->
+      <!-- <Viewuser/> -->
     </div>
      <router-view/>
   </div>
@@ -16,10 +17,11 @@
 <script>
 import Home from './components/Home/Home.vue'
 import Adduser from "./components/Adduser/Adduser.vue"
+import Viewuser from "./components/Viewuser/Viewuser.vue"
 export default {
   name: 'App',
   components: {
-    Home , Adduser 
+    Home , Adduser ,Viewuser
     }
 }
 </script>

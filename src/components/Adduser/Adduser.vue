@@ -16,10 +16,13 @@
     <label for="psw-repeat"><b>PhoneNumber</b></label>
     <input type="text" placeholder="Enter Phone Number" name="phonenumber" id="phonenumber" required>
 
-    <button type="submit" class="registerbtn">Add User</button>
+    <button type="submit" class="registerbtn" @click="submit($event)">Add User and View</button>
+    
   </div>
   
 </form>
+
+
 </body>
 
 
@@ -33,4 +36,3 @@ export default Adduser
 <style lang="less">
   @import "./Adduser.less";
 </style>
-

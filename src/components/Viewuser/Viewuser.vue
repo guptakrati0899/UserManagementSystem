@@ -1,5 +1,13 @@
 <template>
-    <div>Edit user</div>
+      <div>
+      <div>Edit user</div>
+      <div v-for="(post, index) in values" :key="index">
+        <div v-if="index!=0">
+          <span>{{post}}{{index}}</span> <span><button>Edit</button></span> <span><button>Delete</button></span>
+        </div>
+      </div>
+    </div>
+ 
 </template>
 
 <script>
