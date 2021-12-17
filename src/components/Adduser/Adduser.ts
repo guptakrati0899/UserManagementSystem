@@ -12,12 +12,14 @@ export class Adduser extends Vue {
 
     public user:User = {
         name: "",
-        email: '',
+        email: "",
         phonenumber: "",
         key:""
     }
 
-    public userArray : any =[]
+    public userArray : any;
+
+    public userList : Array<User> = []
 
     submit(event:any):void{
         event.preventDefault();
@@ -29,11 +31,22 @@ export class Adduser extends Vue {
         this.user.email = email.value,
         this.user.phonenumber= num.value
         this.user.key = Math.random().toString()
-        localStorage.setItem(this.user.key,JSON.stringify(this.user));
+       
         console.log(this.user)
 
+        this.userList.push(this.user)
+        localStorage.setItem('userList',JSON.stringify(this.userList));
+
+       
+
+        
+        
+        console.log(this.userArray)
+       
+        
         this.$router.push('/viewuser')
     }
 
     
 }
+
